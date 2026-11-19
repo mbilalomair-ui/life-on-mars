@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blue Sunsets: My Life on Mars</title>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--desk:#6C4A8C;--dot:#8A66AD;--paper:#FFFDF7;--ink:#241A2E;--mute:#5E5468;--kraft:#C79F72;--purple:#6A3DAA;--rust:#B4492B;--blue:#2A5AA5;--note:#FFF1A8;--line:#D9CFE6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--desk:#0E0E22;--dot:#1B1B3A;--paper:#22223F;--ink:#F0EADF;--mute:#B1AAC4;--kraft:#6E5538;--purple:#C4A4F5;--rust:#F09A72;--blue:#8DBBFF;--note:#5A5127;--line:#3A3A63;color-scheme:dark}}
+:root[data-theme="dark"]{--desk:#0E0E22;--dot:#1B1B3A;--paper:#22223F;--ink:#F0EADF;--mute:#B1AAC4;--kraft:#6E5538;--purple:#C4A4F5;--rust:#F09A72;--blue:#8DBBFF;--note:#5A5127;--line:#3A3A63;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;padding:1rem .6rem 3rem;background:var(--desk) radial-gradient(var(--dot) 3px,transparent 4px) 0 0/34px 34px;color:var(--ink);font:400 1.2rem/1.5 "Patrick Hand","Comic Sans MS",cursive,sans-serif}
+.mk{font-family:"Permanent Marker","Brush Script MT",cursive;font-weight:400;margin:0;line-height:1.1}
+.sheet{position:relative;max-width:54rem;margin:0 auto 2.2rem;padding:2.2rem clamp(1.1rem,5vw,3rem) 3rem;background:var(--paper);box-shadow:0 6px 0 rgba(0,0,0,.18);border-radius:4px}
+.pg{position:absolute;bottom:.8rem;left:0;right:0;text-align:center;color:var(--mute);font-size:1rem}
+.tape{height:26px;background:repeating-linear-gradient(45deg,#F3C623 0 14px,#1a1a1a 14px 28px);margin:-2.2rem calc(-1*clamp(1.1rem,5vw,3rem)) 1.4rem}
+.tape.b{margin:1.6rem calc(-1*clamp(1.1rem,5vw,3rem)) -3rem}
+.strip{display:inline-block;background:var(--kraft);padding:.7rem 2rem .9rem 1.4rem;margin:0 0 1.4rem -1.4rem;transform:rotate(-1.2deg);clip-path:polygon(0 8%,6% 0,14% 6%,25% 0,37% 5%,50% 0,64% 6%,78% 0,90% 5%,100% 0,100% 94%,94% 100%,82% 95%,66% 100%,52% 94%,38% 100%,22% 95%,10% 100%,0 94%)}
+.strip h2{font-size:clamp(1.6rem,5vw,2.4rem);color:var(--ink)}
+.sub{font-family:"Permanent Marker",cursive;color:var(--rust);font-size:1.4rem;transform:rotate(-2deg);display:inline-block;margin:.2rem 0}
+.box{border:2.5px dashed var(--ink);border-radius:20px;padding:1rem 1.3rem;margin:1.1rem 0;background:var(--paper)}
+.box h3{font-size:1.4rem;color:var(--purple);margin-bottom:.4rem}
+.note{background:var(--note);padding:.9rem 1.1rem;margin:1rem 0;box-shadow:3px 4px 0 rgba(0,0,0,.18);transform:rotate(-.6deg);position:relative}
+.note::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:rgba(199,159,114,.75);transform:rotate(2deg)}
+.note b{color:var(--rust)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem}
+p{margin:.6rem 0}ul{margin:.4rem 0;padding-left:1.3rem}li{margin:.3rem 0}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.cover{--paper:#FFFDF7;--ink:#241A2E;--purple:#6A3DAA;--mute:#5E5468;background:#FFFDF7 repeating-linear-gradient(transparent 0 27px,#C9D6EA 27px 28px);color:#241A2E}
+.stamp{display:inline-block;border:3px double #6A3DAA;padding:.2rem .9rem;font-family:"Permanent Marker",cursive;color:#6A3DAA;transform:rotate(-3deg);font-size:1.5rem}
+.top{position:absolute;right:1.4rem;top:3.4rem;transform:rotate(8deg);border:3px solid #B4492B;color:#B4492B;font-family:"Permanent Marker",cursive;padding:.1rem .6rem;font-size:1.2rem;opacity:.85}
+.title{font-size:clamp(2.8rem,11vw,6rem);color:#6A3DAA;-webkit-text-stroke:2px #111;paint-order:stroke fill;text-shadow:4px 4px 0 #111;margin:1rem 0 .6rem;letter-spacing:.01em}
+.hl{background:linear-gradient(transparent 20%,#C9B0EE 20%);display:inline-block;padding:.1rem .8rem;transform:rotate(-1deg);font-size:1.3rem}
+.photo{width:min(20rem,86%);background:#fff;padding:.6rem .6rem 2rem;box-shadow:3px 5px 0 rgba(0,0,0,.2);transform:rotate(3deg);margin:1.4rem 0 0 auto;position:relative}
+.photo::before{content:"";position:absolute;top:-12px;left:40%;width:80px;height:22px;background:rgba(243,198,35,.8);transform:rotate(-4deg)}
+.photo svg{display:block;width:100%}.photo span{position:absolute;bottom:.4rem;left:0;right:0;text-align:center;color:#241A2E;font-size:1.05rem}
+table{border-collapse:collapse;width:100%}
+th,td{border:2px solid var(--ink);padding:.45rem .7rem;text-align:left}
+th{background:var(--kraft);font-family:"Permanent Marker",cursive;font-weight:400}
+.tw{overflow-x:auto}.tw table{min-width:26rem}
+.fc{background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;padding:.8rem 1rem}
+.fc big{display:block;font-family:"Permanent Marker",cursive;font-size:1.9rem;color:var(--rust);line-height:1.1}
+.log{display:grid;grid-template-columns:5.6rem 1fr;gap:1rem;margin:1.6rem 0;padding-top:1rem;border-top:2px dashed var(--line)}
+.sol{font-family:"Permanent Marker",cursive;color:var(--rust);font-size:2rem;line-height:1}.sol small{display:block;font-family:"Patrick Hand",cursive;font-size:1rem;color:var(--mute)}
+.log h3{font-size:1.7rem;color:var(--purple)}
+.tool{border:2.5px dashed var(--ink);border-radius:16px;padding:1rem;margin:1rem 0}
+.tool label{display:block;margin-bottom:.4rem}
+.tool input[type=number]{font:inherit;width:6rem;padding:.2rem .5rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:6px}
+.tool input[type=range]{width:100%;accent-color:var(--purple)}
+.out{font-family:"Permanent Marker",cursive;font-size:1.6rem;color:var(--blue);margin-top:.5rem}
+.bar{display:grid;grid-template-columns:8.5rem 1fr 4rem;align-items:center;gap:.6rem;margin:.5rem 0}
+.bar i{display:block;height:1.2rem;border-radius:0 10px 10px 0;background:var(--purple)}.bar i.r{background:var(--rust)}
+.bar span:last-child{text-align:right}
+.ck{list-style:none;padding:0}.ck li::before{content:"\2713  ";color:var(--purple)}.ck.x li::before{content:"\2717  ";color:var(--rust)}
+@media (max-width:640px){.log{grid-template-columns:1fr;gap:.3rem}.bar{grid-template-columns:6.5rem 1fr 3.4rem}.top{top:3.2rem;right:.6rem}}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.sheet{box-shadow:none;break-after:page;break-inside:avoid-page}}
+</style>
+</head>
+<body>
+
+<section class="sheet cover">
+<div class="tape"></div>
+<span class="top">TOP SECRET</span>
+<span class="stamp">CASE FILE 001</span>
+<p style="max-width:20rem;margin-top:.6rem">one planet. one year. one very long commute. here is how I live on it.</p>
+<h1 class="mk title">BLUE<br>SUNSETS</h1>
+<div class="mk hl">My Life on Mars: a logbook from the Red Planet</div>
+<div class="photo"><svg viewBox="0 0 300 200" role="img" aria-label="Blue sunset over Martian dunes"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B0B22"/><stop offset=".55" stop-color="#3E5E9E"/><stop offset="1" stop-color="#A9CDF5"/></linearGradient></defs><rect width="300" height="200" fill="url(#g)"/><circle cx="205" cy="120" r="30" fill="#BFE0FF" opacity=".3"/><circle cx="205" cy="120" r="12" fill="#fff"/><circle cx="70" cy="40" r="3" fill="#E8DCCB"/><path d="M0 150 Q60 130 130 148 T300 140 V200 H0Z" fill="#3A1F2E"/><path d="M0 178 Q90 160 180 174 T300 168 V200 H0Z" fill="#241324"/></svg><span>Sol 90: the sunset from my window</span></div>
+<div class="note" style="max-width:17rem;margin-top:1.2rem;background:#E6D9FA;color:#241A2E"><b style="color:#6A3DAA">Mission checklist</b><br>&#9744; observe &#9744; survive<br>&#9744; explore &#9745; explain</div>
+<p style="margin-top:1.4rem"><b>Project by:</b> Muhammad Bilal Omair &nbsp;<b>Class:</b> 11</p>
+<p><b>Project:</b> Science Project: Vibe Coding</p>
+<div class="tape b"></div>
+</section>
+
+<section class="sheet">
+<div class="strip"><h2 class="mk">My planet: Mars</h2></div>
+<p>If I could pick any planet to live on, I pick <b>Mars</b>. It is rocky, has ice under the ground, and a day almost the same length as ours. It is named after the Roman god of war because of its blood-red colour, which comes from iron oxide: rust in the soil.</p>
+<p class="sub">my new address, in numbers</p>
+<div class="grid">
+<div class="fc"><big>4th planet</big>from the Sun, 228 million km away on average</div>
+<div class="fc"><big>24 h 39 min</big>one Sol, my new &ldquo;day&rdquo;</div>
+<div class="fc"><big>687 days</big>one Mars year, about 669 Sols</div>
+<div class="fc"><big>0.38 g</big>gravity, compared with Earth&rsquo;s 1 g</div>
+<div class="fc"><big>&minus;63 &deg;C</big>average temperature</div>
+<div class="fc"><big>2 moons</big>Phobos and Deimos</div>
+</div>
+<div class="box"><h3>Why I chose it</h3><p>Because it is the one place humans might really live one day, not just visit. Everything in this logbook uses real data. Only the person living it is imaginary.</p></div>
+<div class="pg">&mdash; 1 &mdash;</div>
+</section>
+
+<section class="sheet">
+<div class="strip"><h2 class="mk">Arriving and settling in</h2></div>
+<div class="log"><div class="sol">Sol 1<small>Arrival</small></div><div>
+<h3 class="mk">Seven months of falling, then dust</h3>
+<p>The trip took about seven months. Launches only work when Earth and Mars line up, roughly every 26 months. I stepped out into a pink-butterscotch sky and heard my own pulse in my helmet.</p>
+<div class="note"><b>Fact:</b> Mars has only about 11% of Earth&rsquo;s mass, yet its land area is close to all of Earth&rsquo;s dry land, because Mars has no oceans.</div></div></div>
+
+<div class="log"><div class="sol">Sol 3<small>My home</small></div><div>
+<h3 class="mk">I live underground on purpose</h3>
+<p>Mars has no global magnetic field and a thin atmosphere, so radiation reaches the ground easily. Our habitat sits inside a lava tube, a tunnel left by ancient volcanoes, with rock overhead as a free shield. Our &ldquo;windows&rdquo; are screens linked to outside cameras.</p></div></div>
+
+<div class="log"><div class="sol">Sol 12<small>Air and water</small></div><div>
+<h3 class="mk">Making oxygen from the sky</h3>
+<p>NASA&rsquo;s Perseverance rover carried MOXIE, an experiment that split Martian carbon dioxide into oxygen. Our colony uses a much bigger version. Water comes from ice just under the soil, which we filter because Martian soil contains toxic perchlorate salts.</p>
+<div class="note"><b>Fact:</b> Liquid water cannot last on the surface. The air pressure is so low that it boils or freezes away.</div></div></div>
+<div class="pg">&mdash; 2 &mdash;</div>
+</section>
+
+<section class="sheet">
+<div class="strip"><h2 class="mk">An ordinary Sol</h2></div>
+<p class="sub">how my day runs (on Mars clock)</p>
+<div class="tw"><table>
+<thead><tr><th>Time</th><th>What I do</th></tr></thead>
+<tbody>
+<tr><td>06:30</td><td>Wake up, check oxygen and pressure readings</td></tr>
+<tr><td>07:30</td><td>Breakfast: rehydrated oats and greenhouse greens</td></tr>
+<tr><td>09:00</td><td>Work shift: repairs, lab tests, water mining</td></tr>
+<tr><td>14:00</td><td>Suit up and go outside to brush dust off the solar panels</td></tr>
+<tr><td>17:00</td><td>Two hours of exercise to protect muscles and bones</td></tr>
+<tr><td>19:30</td><td>Dinner and sunset watching</td></tr>
+<tr><td>22:00</td><td>Record a message for Earth</td></tr>
+<tr><td>24:00&ndash;24:39</td><td>The &ldquo;Mars bonus&rdquo;: 39 extra minutes I use for stargazing</td></tr>
+</tbody></table></div>
+
+<div class="log"><div class="sol">Sol 25<small>Food</small></div><div>
+<h3 class="mk">Dinner is part science project</h3>
+<p>Most meals are dried or packaged. Fresh greens grow in a sealed greenhouse with Martian-soil substitutes and artificial light, because real Martian soil needs washing to remove toxic salts.</p>
+<div class="note"><b>Fact:</b> Astronauts on the International Space Station have already eaten lettuce grown in space, and researchers on Earth have grown crops in simulated Martian soil.</div></div></div>
+
+<div class="log"><div class="sol">Sol 40<small>Gravity</small></div><div>
+<h3 class="mk">I weigh a third of myself</h3>
+<p>Mars has about 38% of Earth&rsquo;s gravity. Jumping feels like a superpower. Try the scale:</p>
+<div class="tool"><label for="kg">Your weight on Earth (kg)</label><input id="kg" type="number" min="1" max="300" value="50" inputmode="decimal"><div class="out" id="wout" aria-live="polite"></div></div></div></div>
+<div class="pg">&mdash; 3 &mdash;</div>
+</section>
+
+<section class="sheet">
+<div class="strip"><h2 class="mk">Sky, storms and moons</h2></div>
+<div class="log"><div class="sol">Sol 90<small>The sky</small></div><div>
+<h3 class="mk">The sunsets are blue</h3>
+<p>By day the sky is butterscotch because fine red dust hangs in the air. At sunset the dust scatters blue light forward, so the glow around the Sun turns icy blue. Then Phobos rises in the west, crossing the sky about three times a day.</p>
+<div class="note"><b>Fact:</b> Phobos is only about 22 km wide and is slowly drifting closer to Mars. It may break apart in tens of millions of years.</div></div></div>
+
+<div class="log"><div class="sol">Sol 200<small>Storm</small></div><div>
+<h3 class="mk">The planet goes dim</h3>
+<p>A regional dust storm grew until it wrapped the whole planet, something that only happens on Mars. The wind is weak in the thin air, but the dust is fine, clings to everything and blocks sunlight from our solar panels. We rationed power and played cards by lamplight.</p>
+<div class="note"><b>Fact:</b> A global dust storm in 2018 cut contact with NASA&rsquo;s solar-powered rover Opportunity, which had worked for almost 15 years.</div></div></div>
+
+<div class="log"><div class="sol">Sol 260<small>Exploring</small></div><div>
+<h3 class="mk">My backyard is a record breaker</h3>
+<p>On weekends we drive out to see the sights: Olympus Mons, a volcano about 22 km high, and Valles Marineris, a canyon about 4,000 km long and up to 7 km deep. The Grand Canyon would fit inside it many times over.</p></div></div>
+<div class="pg">&mdash; 4 &mdash;</div>
+</section>
+
+<section class="sheet">
+<div class="strip"><h2 class="mk">Calling home</h2></div>
+<div class="log"><div class="sol">Sol 340<small>Messages</small></div><div>
+<h3 class="mk">Every &ldquo;hello&rdquo; takes minutes</h3>
+<p>Radio signals travel at light speed, but Mars is far away and the distance keeps changing. A chat is really an exchange of letters. Slide to see how long one message takes to reach Earth.</p>
+<div class="tool"><label for="dist">Distance to Earth: <b id="dval"></b> million km</label><input id="dist" type="range" min="55" max="400" value="225"><div class="out" id="dout" aria-live="polite"></div></div>
+<div class="note"><b>Did you know?</b> In 2021 the Ingenuity helicopter made the first powered flight on another planet. It was only meant to fly 5 times, and it flew 72.</div></div></div>
+
+<p class="sub">Mars next to Earth (Earth = 100%)</p>
+<div class="bar"><span>Mass</span><i style="width:5.4%"></i><span>11%</span></div>
+<div class="bar"><span>Gravity</span><i style="width:19%"></i><span>38%</span></div>
+<div class="bar"><span>Sunlight</span><i style="width:21.5%"></i><span>43%</span></div>
+<div class="bar"><span>Diameter</span><i style="width:26.5%"></i><span>53%</span></div>
+<div class="bar"><span>Day length</span><i class="r" style="width:51.5%"></i><span>103%</span></div>
+<div class="bar"><span>Year length</span><i class="r" style="width:94%"></i><span>188%</span></div>
+<p style="color:var(--mute);font-size:1rem">Drawn on a 200% scale. Purple is smaller than Earth, rust is longer than Earth.</p>
+<div class="tw"><table>
+<thead><tr><th></th><th>Earth</th><th>Mars</th></tr></thead>
+<tbody>
+<tr><td>Tallest mountain</td><td>Everest, 8.8 km</td><td>Olympus Mons, about 22 km</td></tr>
+<tr><td>Longest canyon</td><td>Grand Canyon, 446 km</td><td>Valles Marineris, about 4,000 km</td></tr>
+<tr><td>Air</td><td>mostly nitrogen and oxygen</td><td>about 95% carbon dioxide</td></tr>
+<tr><td>Message delay</td><td>none</td><td>about 3 to 22 minutes</td></tr>
+</tbody></table></div>
+<div class="pg">&mdash; 5 &mdash;</div>
+</section>
+
+<section class="sheet">
+<div class="strip"><h2 class="mk">Would I stay?</h2></div>
+<div class="log" style="border-top:0;margin-top:0"><div class="sol">Sol 669<small>Year one ends</small></div><div>
+<h3 class="mk">My first Mars year</h3>
+<p>A Mars year lasts 687 Earth days, so the seasons are nearly twice as long as ours. I expected to miss home, and I did. But I also learned to love a blue sunset, a day just 39 minutes longer than yours, and a horizon that no human has ever walked to the end of.</p></div></div>
+<div class="grid">
+<div class="box"><h3>What I love</h3><ul class="ck"><li>Blue sunsets and two moons</li><li>Jumping three times higher</li><li>Ice for water right under my feet</li><li>Days that feel like home</li></ul></div>
+<div class="box"><h3>What is hard</h3><ul class="ck x"><li>Thin air, so a suit outside</li><li>Radiation, so I live underground</li><li>Cold of &minus;63 &deg;C on average</li><li>Messages that take minutes</li></ul></div>
+</div>
+<div class="note"><b>My verdict:</b> Mars is a planet of extremes but not an impossible one. It would be a hard life, and a life full of wonder.</div>
+<div class="tape b"></div>
+<div class="pg" style="bottom:2.2rem">&mdash; 6 &mdash;</div>
+</section>
+
+<script>
+(function(){
+var kg=document.getElementById('kg'),wo=document.getElementById('wout');
+function w(){var v=parseFloat(kg.value);wo.textContent=isNaN(v)||v<=0?'Enter a weight':(v*0.38).toFixed(1)+' kg on Mars';}
+kg.addEventListener('input',w);w();
+var d=document.getElementById('dist'),dv=document.getElementById('dval'),dout=document.getElementById('dout');
+function t(){var m=+d.value;dv.textContent=m;dout.textContent=(m*1e6/299792/60).toFixed(1)+' minutes one way';}
+d.addEventListener('input',t);t();
+})();
+</script>
+</body>
+</html>
